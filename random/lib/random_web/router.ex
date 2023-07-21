@@ -18,6 +18,7 @@ defmodule RandomWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/random_number", RandomController, :random
   end
 
   # Other scopes may use custom stacks.
