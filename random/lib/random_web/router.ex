@@ -19,6 +19,8 @@ defmodule RandomWeb.Router do
 
     get "/", PageController, :home
     get "/random_number", RandomController, :random
+    get "/about", AboutController, :about
+    get "/projects", ProjectsController, :projects
   end
 
   # Other scopes may use custom stacks.
